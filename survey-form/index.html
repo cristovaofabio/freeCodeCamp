@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <label id="name-label">Name 
+            <input placeholder="Enter your name" required id="name" type="text"/>
+        </label>
+        <label id="email-label">Email 
+            <input placeholder="Enter your Email" required id="email" type="email"/>
+        </label>
+        <label id="number-label">Age
+            <input placeholder="Age" min="0" max="120" required id="number" type="number"/>
+        </label>
+        <label>Which option best describes your current role?
+            <select id="dropdown">
+                <option disabled>Select current role</option>
+                <option>Student</option>
+                <option>Full Time Job</option>
+                <option>Other</option>
+            </select>
+        </label>
+        <label>Would you recommend freeCodeCamp to a friend?
+            <label><input name="choice" value="definitely" type="radio" class="inline"/> Definitely </label>
+            <label><input name="choice" value="maybe" type="radio" class="inline"/> Maybe </label>
+            <label><input name="choice" value="not-sure" type="radio" class="inline"/> Not sure </label>
+        </label>
+        <label>What would you like to see improved?
+            <label><input value="front-end" type="checkbox" class="inline"/> Front-end Projects </label>
+            <label><input value="back-end" type="checkbox" class="inline"/> Back-end Projects </label>
+            <label><input value="data-visualization" type="checkbox" class="inline"/> Data Visualization </label>
+            <label><input value="challenges" type="checkbox" class="inline"/> Challenges </label>
+            <label><input value="open-source" type="checkbox" class="inline"> Open Source Community </label>
+        </label>
+        <label>Any comments or suggestions?
+            <textarea placeholder="Enter your comment here..." rows="5" cols="40"></textarea>
+        </label>
+        <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
