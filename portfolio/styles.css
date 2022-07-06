@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#header {
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    top: 0;
+    background-color: #4ea3f8;
+    height: 80px;
+    width: 100vw;
+    color: white;
+}
+
+#navbar>ul {
+    display: flex;
+    width: 40vw;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#navbar>ul>li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#projects>h1,
+#contact>h1 {
+    padding-top: 100px;
+}
+
+#some-projects,
+#social-media {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 4px;
+}
+
+#some-projects div {
+    margin: 8px 5px;
+    padding: 0 4px;
+    border-radius: 10px;
+}
+
+#project-example {
+    height: 250px;
+    width: 250px;
+    background-color: #4ea3f8;
+    border-radius: 10px;
+}
+
+.fa {
+    padding: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    background: #aaaeaf;
+    color: white;
+}
+
+@media(max-width:600px) {
+
+    #navbar>ul {
+        display: flex;
+        width: 40vw;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    li {
+        margin: 0.2rem 0;
+    }
+}
