@@ -28,7 +28,7 @@ listItems.forEach((item)=>{
 })
 
 */
-
+/*
 const ul = document.querySelector('ul');
 const li = document.createElement('li');
 
@@ -41,3 +41,10 @@ li.remove();
 
 const title = document.querySelector('#main-heading');
 console.log(title.innerHTML);
+*/
+
+let ul = document.querySelector('ul');
+ul.childNodes[1].style.backgroundColor = 'green';
+console.log(ul.children);
+console.log(ul.firstElementChild);
+console.log(ul.lastElementChild);
