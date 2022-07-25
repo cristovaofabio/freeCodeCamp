@@ -27,5 +27,17 @@ listItems.forEach((item)=>{
     item.style.fontSize = '2rem';
 })
 
-
 */
+
+const ul = document.querySelector('ul');
+const li = document.createElement('li');
+
+ul.append(li);
+li.innerText = 'X-men';
+li.setAttribute('id','x-man-item');
+li.removeAttribute('id');
+li.classList.add('list-items');
+li.remove();
+
+const title = document.querySelector('#main-heading');
+console.log(title.innerHTML);
